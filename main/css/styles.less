@@ -1,0 +1,215 @@
+//fonts 
+@font-face {
+	font-family: 'Kaushan Script';
+	src: url('fonts/Kaushan_Script/KaushanScript-Regular.ttf');
+}
+
+//generic styles
+h1, h2, h3 { font-family: 'Kaushan Script', cursive; }
+
+h1 {
+	font-size: 45px;
+}
+
+h2 {
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+a:link, a:visited, a:hover, a:active { color:black; text-decoration: none; } 
+.none { display: none; }
+p { line-height: normal; font-family: serif; }
+
+
+
+div.floatingTop  { 
+	width: 50px; 
+	height: 70px; 
+	position: fixed; 
+	top: 200px; 
+	margin-left: -20px; 
+	-webkit-transform:rotate(270deg);
+	-moz-transform:rotate(270deg);
+	-o-transform: rotate(270deg);
+	font-size: 20px;
+	font-weight: bold;
+}
+
+//header styles
+header {
+	width: 960px;
+	height: 120px;
+	
+	
+	h2 { display: inline-block; }
+	
+	nav {
+		display: inline-block;
+		text-align: right;
+		margin-left: 280px;
+		
+		a {
+			text-align: center;
+			display: inline-block;
+			width: 80px;
+			padding: 5px;
+			border: 1px solid black;
+			-moz-border-radius: 9px;
+			-webkit-border-radius: 9px;
+			border-radius: 9px;
+		}
+		
+		a:hover { background-color: grey; }	
+	}
+}
+
+
+
+//main content styles
+body {
+
+	margin: 0 auto;
+	width: 960px;
+	div.content {
+		width: 960px;
+		display: inline-block;
+		
+		.leftColumn {
+			width: 700px;
+			display: inline-block;
+			vertical-align: top;
+			
+			p.block { display: block; height: 300px; width: 700px; background-color: grey; margin-bottom: 10px; }
+			article { width: 700px;  margin-bottom: 20px;
+				
+				h2 { margin-bottom: 15px; }
+				h3 { margin-bottom: 5px; }
+				div.col2 {
+					width: 330px;
+					display: inline-block;
+					float: left;
+					margin-left: 15px;
+
+					p { margin-bottom: 10px; }
+				}
+			
+			}
+			article.home { height: 280px;
+				span.techology { font-style: italic; }
+			}
+			article.cv a.cvLink {
+				margin-top: 10px;
+				display: block; 
+				text-align: center;
+				img { margin: 0 auto; display: inline-block;  }
+				span { display: block; }
+			}
+			
+			article.gallery {
+				article.album img { display: inline-block; width: 200px; }
+				div.galleryDialog img { width: 10px;  }
+				div.galleryDialog span { display: inline-block; height: 200px;  }
+				div.galleryDialog img.fullSize { width: auto;  }
+			}
+			article.aboutme { height: 450px; }
+			article.projects { 
+
+				div.projectLogos a  {
+					img { display: inline-block; height: 70px; margin: 10px 10px 0 0; }
+					span.logo { 
+						background: url("../img/home/projects/all-projects.png") no-repeat;
+						display: inline-block; 
+						height: 70px; 
+						margin: 10px 10px 0 0; 
+					}
+					span.neoworks { width: 70px;}
+					span.toysrus { width: 60px; background-position: -71px 0px;}
+					span.hybris { width: 70px; background-position: -132px 0px;}
+					span.theentertainer { width: 69px; background-position: -203px 0px;}
+					span.nikon { width: 70px; background-position: -272px 0px;}
+					span.dhl { width: 93px; background-position: -343px 0px;}
+					span.hqhair { width: 158Spx; background-position: -436px 0px;}
+					span.target { width: 70px; background-position: -594px 0px;}
+					span.urooms { width: 70px; background-position: -664px 0px;}
+					span.bluecycle { width: 120px; background-position: -734px 0px;}
+				}
+			}
+		}
+		
+		.rightColumn 
+		{
+			width: 250px;
+			display: inline-block;
+			
+			div.profile { margin-bottom: 20px;
+				div.profileImage
+				{ 
+					background-image: url('../img/home/profile.jpg');
+					background-size: 250px 250px;
+					width: 250px; 
+					height: 250px;
+					-moz-border-radius: 15px;
+					-webkit-border-radius: 15px;
+					border-radius: 15px;
+					border: 5px solid black;
+					display: block;
+				}
+
+				dl {
+					dt { display: block; font-weight: bold; }
+					dd { margin-left: 80px; }
+				}
+			}
+			
+			div.socialMedia {
+				div.qrblock { width: 200px; height: 200px; margin: 0 auto; position: relative;
+					div.qrcode { width: 200px; height: 200px; position: absolute; }
+					div.qrcode.facebook{ background: url("../img/home/aal-qr-codes.jpg"); }
+					div.qrcode.googleplus{ background: url("../img/home/aal-qr-codes.jpg") no-repeat -200px 0px; }
+					div.qrcode.linkedin{ background: url("../img/home/aal-qr-codes.jpg") no-repeat -400px 0px; }
+					div.qrcode.twitter{ background: url("../img/home/aal-qr-codes.jpg") no-repeat -600px 0px; }
+
+					//new stuff
+					div.qrcode.ophidden { 
+						opacity: 0; 
+						transition:opacity 2s;
+						-moz-transition:opacity 2s; /* Firefox 4 */
+						-webkit-transition:opacity 2s; /* Safari and Chrome */
+						-o-transition:opacity 2s; /* Opera */
+					}
+					div.qrcode.opshow { opacity: 1;
+						transition:opacity 2s;
+						-moz-transition:opacity 2s; /* Firefox 4 */
+						-webkit-transition:opacity 2s; /* Safari and Chrome */
+						-o-transition:opacity 2s; /* Opera */
+ } 
+
+				}
+
+				div.socialIcons {
+					margin: 0 auto; width: 215px; 
+					
+					a, span.logo { width: 50px; height: 50px; display: inline-block; } 
+					a {
+						span.logo.facebook { background: url(../img/home/all-social-icons.png) no-repeat;}
+						span.logo.googleplus { background: url(../img/home/all-social-icons.png) no-repeat -50px 0px;}
+						span.logo.linkedin { background: url(../img/home/all-social-icons.png) no-repeat -100px 0px;}
+						span.logo.twitter { background: url(../img/home/all-social-icons.png) no-repeat -150px 0px;}
+					}
+				}
+			}
+		}
+
+		footer {
+		background-color: rgba(50, 50, 150, 0.2);
+	    bottom: 0;
+	    margin: 0 auto;
+	    position: fixed;
+	    text-align: center;
+	    width: 960px;
+	}
+		
+	}
+
+	
+}

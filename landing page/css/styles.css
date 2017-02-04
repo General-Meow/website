@@ -1,0 +1,98 @@
+body {
+	margin: 0;
+	max-width: 2000px;
+	overflow: hidden;
+}
+h1 {
+	font-family: 'The Girl Next Door', cursive;
+	font-size: 5em;
+	text-align: center;
+}
+
+p {
+	font-family: 'The Girl Next Door', cursive;
+	font-size: 1.5em;
+	text-align: center;
+	font-weight: bold;
+}
+
+div.container { 
+	-webkit-box-shadow: inset 0px 0px 100px #FFF;
+	-moz-box-shadow: inset 0px 0px 100px #FFF;
+	box-shadow: inset 0px 0px 100px #FFF;
+	line-height: 0;
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+}
+
+div.container img { 	
+	background: url('../images/backgroundImageSmall.JPG');
+	background-position: center;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	position: relative;
+	opacity: 0.85;
+	background-size: cover;
+	display: block;
+}
+
+hr.bar {
+	border: 5px solid white;
+	border-radius: 10px;
+	bottom: 0%;
+	margin: 85px 0;
+	position: absolute;
+	text-align: center;
+	left: 5%;
+	right: 5%;
+}
+
+div.profiles {
+	width: 340px;
+	text-align: center;
+	margin: 0 auto;
+
+}
+div.people {
+	
+	position: absolute;
+	width: 340px;
+	bottom: 0%
+}
+
+div.profiles div.people .circle {
+	border-radius: 50%;
+	border: 3px solid white;
+	width: 150px;
+	height: 150px; 
+	display: inline-block;
+	margin: 5px;
+	/* width and height can be anything, as long as they're equal */
+
+	filter: grayscale(100%);
+  	-webkit-filter: grayscale(100%); /* For Webkit browsers */
+  	filter: gray; /* For IE 6 - 9 */
+  	-webkit-transition: all .6s ease; /* Fade to color for Chrome and Safari */
+}
+
+div.profiles div.people .circle:hover {
+	filter: grayscale(0%);
+  	-webkit-filter: grayscale(0%);
+}
+
+.paul {
+	background:url('../images/paul.jpg');
+	background-position: -46px 0px;
+}
+
+.winki {
+	background:url('../images/winki.jpg');
+	background-position-x: 6px;
+	background-size: cover;
+}
+
+

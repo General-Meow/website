@@ -1,0 +1,116 @@
+//fonts 
+@font-face {
+	font-family: 'Kaushan Script';
+	src: url('fonts/Kaushan_Script/KaushanScript-Regular.ttf');
+}
+
+body.ui-mobile-viewport {
+
+	width: 100%;
+	display: inline-block;
+
+	div[data-role="page"] { width: 320px; margin: 0 auto; position: relative;
+
+		div.ui-header { background: none repeat scroll 0 0 #FFFFFF; border: 0;
+
+			//generic styles
+			h1, h2, h3 { font-family: 'Kaushan Script', cursive; color: black; margin: 0; text-shadow: none; }
+			h1 { font-size: 24px; }
+			h2 { font-size: 14px; }
+		}
+
+		div.bg { 
+			background: url('../images/cover.jpg') no-repeat scroll 50% 0; 
+			height: 500px; 
+			left: 0; 
+			top: 0;
+			width: 100%;
+		}
+		div.ui-content { margin: -200px auto 0 auto; width: 280px;
+
+			div.pageText { 
+				border-radius: 20px; 
+				background-color: rgba(255,255,255,0.7); 
+				padding: 20px; 
+				margin-top: 10px;
+
+				h3 { margin-top: 0; }
+				p { margin: 0 0 10px 0;}
+			}
+		}
+
+		div.ui-footer { text-align: center; }
+	}
+
+
+	div#profile {
+		div.profileImage
+		{ 
+			background-image: url('../images/profile.jpg');
+			background-size: 250px 250px;
+			width: 250px; 
+			height: 250px;
+			-moz-border-radius: 15px;
+			-webkit-border-radius: 15px;
+			border-radius: 15px;
+			border: 5px solid black;
+			display: block;
+			margin: 0 auto;
+		}
+
+		dt { font-weight: bold; }
+	}
+
+	div#cv {
+
+		div.pageText a.cvLink { display: block; width: 100%; text-align: center;
+			img { display: block; margin: 0 auto; }
+		}
+	}
+
+	div#projects {
+		div.pageText div.projectLogos {
+			a { margin-left: 5px; }
+			a.neoworks { display: inline-block; width: 50px; height: 50px;
+				span { background: url('../images/mobile-icons.jpg') -4px -56px; width: 50px; height: 50px; display: inline-block; }
+			}
+			a.toysrus { display: inline-block; width: 50px; height: 50px;
+				span { background: url('../images/mobile-icons.jpg') -219px -56px; width: 50px; height: 50px; display: inline-block; }
+			}
+			a.hybris { display: inline-block; width: 50px; height: 50px;
+				span { background: url('../images/mobile-icons.jpg') -57px -56px; width: 50px; height: 50px; display: inline-block; }
+			}
+			a.thetoyshop { display: inline-block; width: 50px; height: 50px;
+				span { background: url('../images/mobile-icons.jpg') -274px -59px; width: 50px; height: 50px; display: inline-block; }
+			}
+			a.nikon{ display: inline-block; width: 50px; height: 50px;
+				span { background: url('../images/mobile-icons.jpg') -111px -59px; width: 50px; height: 50px; display: inline-block; }
+			}
+			a.dhl { display: inline-block; width: 50px; height: 50px;
+				span { background: url('../images/mobile-icons.jpg') -166px -59px; width: 50px; height: 50px; display: inline-block; }
+			}
+			a.hqhair { display: inline-block; width: 100px; height: 50px;
+				span { background: url('../images/mobile-icons.jpg') -8px -114px; width: 100px; height: 50px; display: inline-block; }
+			}
+			a.bluecycle { display: inline-block; width: 80px; height: 50px;
+				span { background: url('../images/mobile-icons.jpg') -121px -114px; width: 80px; height: 50px; display: inline-block; }
+			}
+			a.urooms  { display: inline-block; width: 50px; height: 50px;
+				span { background: url('../images/mobile-icons.jpg') -214px -114px; width: 50px; height: 50px; display: inline-block; }
+			}
+		}
+	}
+
+	div#contact {
+		div.pageText div.socialIcons { margin: 0 auto; text-align: center;
+			a { height: 54px; margin-left: 5px; display: inline-block;
+
+				span.facebook { background: url('../images/mobile-icons.jpg') -0px -0px; width: 54px; height: 54px; display: inline-block; }
+				span.googleplus { background: url('../images/mobile-icons.jpg') -53px -0px; width: 54px; height: 54px; display: inline-block; }
+				span.linkedin { background: url('../images/mobile-icons.jpg') -105px -0px; width: 40px; height: 40px; display: inline-block; }
+				span.twitter { background: url('../images/mobile-icons.jpg') -146px -0px; width: 45px; height: 45px; display: inline-block; }
+			}
+		}
+	}
+}
+
